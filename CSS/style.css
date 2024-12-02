@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #2c3e50;
+}
+
+.contact h2 {
+    font-size: 36px;
+    color: #ecf0f1;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact form {
+    width: 550px;
+    text-align: center;
+}
+
+form .input-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-box .input-field {
+    width: 48%;
+}
+
+.field .item {
+    width: 100%;
+    padding: 15px;
+    background: transparent;
+    border: 2px solid #3498db;
+    outline: none;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #ecf0f1;
+    margin: 12px 0;
+}
+
+.field.error .item {
+    border-color: #e74c3c;
+}
+
+.field .item::placeholder {
+    color: rgba(255, 255, 255, .4);
+}
+
+.field .error-txt {
+    font-size: 14px;
+    color: #e74c3c;
+    text-align: left;
+    margin: -5px 0 10px;
+    display: none;
+}
+
+.field.error .error-txt {
+    display: block;
+}
+
+form .textarea-field .item {
+    resize: none;
+}
+
+form .textarea-field .error-txt {
+    margin-top: -10px;
+}
+
+form button {
+    padding: 12px 30px;
+    background: #3498db;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    box-shadow: 0 0 12px #3498db;
+    font-size: 16px;
+    color: #2c3e50;
+    letter-spacing: 1px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 25px;
+    transition: .4s;
+}
+
+form button:hover {
+    box-shadow: none;
+    background: #2980b9;
+}

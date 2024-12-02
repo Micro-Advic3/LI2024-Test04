@@ -1,11 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Get in Touch</title>
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="CSS/style.css">
 </head>
+
 <body>
-    
+    <section class="contact">
+        <h2>Get in Touch</h2>
+
+        <form action="#">
+            <div class="input-box">
+                <div class="input-field field">
+                    <input type="text" placeholder="Your Full Name" id="name" class="item" autocomplete="off">
+                    <div class="error-txt">Name cannot be empty</div>
+                </div>
+                <div class="input-field field">
+                    <input type="text" placeholder="Your Email Address" id="email" class="item" autocomplete="off">
+                    <div class="error-txt email">Please enter a valid email</div>
+                </div>
+            </div>
+            <div class="input-box">
+                <div class="input-field field">
+                    <input type="tel" placeholder="Your Contact Number" id="phone" class="item" autocomplete="off">
+                    <div class="error-txt">Phone Number cannot be empty</div>
+                </div>
+                <div class="input-field field">
+                    <input type="text" placeholder="Reason for Contact" id="subject" class="item" autocomplete="off">
+                    <div class="error-txt">Please specify a reason</div>
+                </div>
+            </div>
+
+            <div class="textarea-field field">
+                <textarea name="" id="message" cols="30" rows="10" placeholder="Tell us more" class="item" autocomplete="off"></textarea>
+                <div class="error-txt">Please enter your message</div>
+            </div>
+
+            <button type="submit">Submit Inquiry</button>
+        </form>
+    </section>
+
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="JS/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
 </body>
+
 </html>
